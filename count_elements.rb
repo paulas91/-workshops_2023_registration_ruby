@@ -4,7 +4,7 @@ class CountElements
   end
 
   def perform
-    @results.group_by(&:itself).transform_values(&:count)
+    results.group_by(&:itself).transform_values(&:count)
   end
 
   private
