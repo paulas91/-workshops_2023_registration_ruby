@@ -11,10 +11,3 @@ class CountElements
 
   attr_reader :results
 end
-
-
-
-
-
-
-
