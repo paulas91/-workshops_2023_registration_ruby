@@ -1,7 +1,4 @@
 class CountElements
-
-  attr_reader :results
-
   def initialize(results)
     @results = results
   end
@@ -9,6 +6,10 @@ class CountElements
   def perform
     @results.group_by(&:itself).transform_values(&:count)
   end
+
+  private
+
+  attr_reader :results
 end
 
 
